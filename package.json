@@ -9,6 +9,9 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "allowScripts": {
+    "esbuild": true
+  },
   "dependencies": {
     "clsx": "^2.1.1",
     "lucide-react": "^0.453.0",
@@ -28,5 +31,8 @@
     "tailwindcss": "^3.4.15",
     "typescript": "^5.6.3",
     "vite": "^6.0.1"
+  },
+  "optionalDependencies": {
+    "@esbuild/linux-x64": "^0.25.0"
   }
 }
