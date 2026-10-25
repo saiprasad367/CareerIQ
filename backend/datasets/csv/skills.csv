@@ -1,0 +1,23 @@
+canonical_name,category,aliases
+Python,languages,"py;python3"
+JavaScript,languages,"js;es6"
+TypeScript,languages,ts
+Java,languages,"core java;java 17"
+C++,languages,"cpp;cplusplus"
+Go,languages,golang
+SQL,languages,structured query language
+FastAPI,frameworks,fast api
+Django,frameworks,"django rest framework;drf"
+React,frameworks,"reactjs;react.js"
+Node.js,frameworks,"nodejs;node"
+PostgreSQL,databases,"postgres;psql"
+Docker,devops,containerization
+Kubernetes,devops,k8s
+AWS,cloud,amazon web services
+Machine Learning,ai,ml
+PyTorch,frameworks,torch
+scikit-learn,frameworks,sklearn
+REST API,architecture,"restful api;rest"
+Unit Testing,testing,"pytest;jest"
+Git,tools,"github;version control"
+CI/CD,devops,"continuous integration;github actions"

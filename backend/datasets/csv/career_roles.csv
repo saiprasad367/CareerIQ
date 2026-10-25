@@ -1,0 +1,8 @@
+slug,title,category,experience_level,description
+software-engineer,Software Engineer,Software Engineering,entry,"Designs, develops, tests, and maintains robust software systems, algorithms, and application components."
+backend-developer,Backend Developer,Backend Engineering,entry,"Architects asynchronous server-side services, scalable REST APIs, relational schemas, and data pipelines."
+full-stack-developer,Full-Stack Developer,Full-Stack Engineering,entry,"Builds end-to-end web applications combining responsive React user interfaces with robust backend APIs."
+machine-learning-engineer,Machine Learning Engineer,AI & Data Science,entry,"Designs, trains, evaluates, and deploys predictive machine learning and deep learning pipelines into production."
+data-analyst,Data Analyst,Data & Analytics,entry,"Transforms raw structured and unstructured data into actionable insights, dashboards, and quantitative reports."
+cloud-devops-engineer,Cloud / DevOps Engineer,Cloud & Infrastructure,entry,"Automates continuous integration and deployment pipelines, container orchestration, and cloud infrastructure."
+qa-automation-engineer,QA Automation Engineer,Quality Engineering,entry,"Develops comprehensive automated end-to-end test suites, regression pipelines, and performance benchmarks."

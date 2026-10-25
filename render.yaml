@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: careeriq-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: DEBUG
+        value: "false"
+      - key: DATABASE_URL
+        value: sqlite+aiosqlite:///./careeriq.db
+      - key: DATABASE_URL_SYNC
+        value: sqlite:///./careeriq.db
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: LLM_PROVIDER
+        value: gemini
+      - key: LLM_MODEL
+        value: gemini-2.5-flash
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGINS
+        value: http://localhost:5173,http://localhost:5174
