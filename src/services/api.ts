@@ -5,7 +5,27 @@
 
 import { storage } from '@/lib/storage';
 
-const API_BASE_URL = (import.meta as any).env?.VITE_API_BASE_URL || 'http://localhost:8000/api/v1';
+declare const __API_BASE_URL__: string | undefined;
+
+function getApiBaseUrl(): string {
+  const envUrl =
+    (typeof __API_BASE_URL__ !== 'undefined' && __API_BASE_URL__) ||
+    (import.meta as any).env?.API_BASE_URL ||
+    (import.meta as any).env?.VITE_API_BASE_URL ||
+    'http://localhost:8000/api/v1';
+
+  let cleaned = String(envUrl).trim().replace(/\/+$/, '');
+  if (!cleaned.endsWith('/api/v1')) {
+    if (cleaned.endsWith('/api')) {
+      cleaned = `${cleaned}/v1`;
+    } else {
+      cleaned = `${cleaned}/api/v1`;
+    }
+  }
+  return cleaned;
+}
+
+const API_BASE_URL = getApiBaseUrl();
 
 export class ApiError extends Error {
   code: string;
